@@ -1,0 +1,227 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MEN DIALOG DISCARDABLE  0, 0, 300, 300
+STYLE DS_3DLOOK | DS_CENTER | DS_CENTERMOUSE | WS_CHILD | WS_DISABLED | 
+    WS_CAPTION
+CAPTION "Мужчины"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Спортсмен",IDC_STATIC,7,9,84,8
+    EDITTEXT        IDC_EDT_SPORTSMAN,94,7,199,12,ES_AUTOHSCROLL
+    LTEXT           "Собственный вес, кг",IDC_STATIC,7,22,84,8
+    EDITTEXT        IDC_EDT_WEIGHT,94,20,73,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Первое упражнение, кг",IDC_STATIC,7,35,84,8
+    EDITTEXT        IDC_EDT_RESULT,94,33,73,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_SUM1,169,33,73,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Второе упражнение, кг",IDC_STATIC,7,48,84,8
+    EDITTEXT        IDC_EDT_RESULT2,94,46,73,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_SUM2,169,46,73,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Спортивная величина",IDC_STATIC,7,66,84,8
+    CONTROL         "",IDC_REDT_SPORTVALUE,"RICHEDIT",ES_AUTOHSCROLL | 
+                    ES_READONLY | WS_BORDER | WS_TABSTOP,94,62,148,16
+    DEFPUSHBUTTON   "+",IDC_BTN_APPEND,248,33,45,14
+    PUSHBUTTON      "Отчет",IDC_BTN_REPORT,248,63,45,14
+    CONTROL         "List1",IDC_MENLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOLABELWRAP | 
+                    LVS_AUTOARRANGE | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,
+                    7,81,286,212
+END
+
+IDD_WOMEN DIALOG DISCARDABLE  0, 0, 300, 300
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | DS_CENTERMOUSE | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Женщины"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Спортсмен",IDC_STATIC,7,9,84,8
+    EDITTEXT        IDC_EDT_SPORTSMAN,94,7,199,12,ES_AUTOHSCROLL
+    LTEXT           "Собственный вес, кг",IDC_STATIC,7,22,84,8
+    EDITTEXT        IDC_EDT_WEIGHT,94,20,73,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Первое упражнение, кг",IDC_STATIC,7,35,84,8
+    EDITTEXT        IDC_EDT_RESULT,94,33,73,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_SUM1,169,33,73,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Второе упражнение, кг",IDC_STATIC,7,48,84,8
+    EDITTEXT        IDC_EDT_RESULT2,94,46,73,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_SUM2,169,46,73,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Спортивная величина",IDC_STATIC,7,66,84,8
+    CONTROL         "",IDC_REDT_SPORTVALUE,"RICHEDIT",ES_AUTOHSCROLL | 
+                    ES_READONLY | WS_BORDER | WS_TABSTOP,94,62,148,16
+    DEFPUSHBUTTON   "+",IDC_BTN_APPEND,248,33,45,14
+    PUSHBUTTON      "Отчет",IDC_BTN_REPORT,248,63,45,14
+    CONTROL         "List1",IDC_WOMENLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOLABELWRAP | 
+                    LVS_AUTOARRANGE | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,
+                    7,81,286,212
+END
+
+IDD_CALC DIALOG DISCARDABLE  0, 0, 300, 300
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | DS_CENTERMOUSE | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Калькулятор"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Собственный вес, кг",IDC_STATIC,7,9,84,8
+    EDITTEXT        IDC_EDT_WEIGHT,113,7,73,12,ES_CENTER | ES_AUTOHSCROLL
+    CTEXT           "Коэффициент Вилкса",IDC_STATIC,7,23,286,8,
+                    SS_CENTERIMAGE
+    LTEXT           "Мужчины",IDC_STATIC,7,37,84,8
+    EDITTEXT        IDC_EDT_MEN,113,35,73,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Женщины",IDC_STATIC,7,49,84,8
+    EDITTEXT        IDC_EDT_WOMEN,113,47,73,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "List1",IDC_CALCLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOLABELWRAP | 
+                    LVS_AUTOARRANGE | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,
+                    7,65,286,228
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 293
+    END
+
+    IDD_WOMEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 293
+    END
+
+    IDD_CALC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 293
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\WilksCalc.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\WilksCalc.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\WilksCalc.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
